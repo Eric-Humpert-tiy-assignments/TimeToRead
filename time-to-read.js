@@ -2,11 +2,10 @@ var words = "Walk on car leaving trail of paw prints on hood and windshield eat 
 
 
 function timetoread(string) {
-  var count = [];
-  var text = string.split(' ');
-  count.push(text);
+  var count = string.split(' ');
   var time = (count.length / 230);
-  return time;
+  console.log(count.length);
+  return Math.round(time);
 }
 
 console.log(timetoread(words));
